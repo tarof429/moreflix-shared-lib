@@ -1,0 +1,1 @@
+Run a docker compose profile and return the exit status

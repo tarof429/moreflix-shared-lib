@@ -1,0 +1,1 @@
+Builds a docker image with a given tag.

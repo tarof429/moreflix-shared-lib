@@ -1,0 +1,1 @@
+Call docker compose down with a list of profiles and remove all orphans

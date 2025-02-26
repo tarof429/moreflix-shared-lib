@@ -1,0 +1,1 @@
+Stop docker compose with a list of profiles
