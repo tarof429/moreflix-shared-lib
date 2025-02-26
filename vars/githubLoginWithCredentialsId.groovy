@@ -5,7 +5,7 @@ def call(credentialsId, url) {
         string(
             credentialsId: ${credentialsId}, 
             variable: 'GIT_PAT')]) {
-        url = url.replace("https://github.com", "https://${GIT_PATH}@github.com")
+        url = url.replace("https://github.com", "https://${GIT_PAT}@github.com")
 
         echo "Committing changes to ${url}"
 
