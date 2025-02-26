@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call() {
+def call(credentialsId, url) {
     withCredentials([
         string(
             credentialsId: credentialsId, 
