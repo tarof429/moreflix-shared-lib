@@ -20,7 +20,7 @@ def updateSetupPy(file) {
 
     def nextPatch = patch.toInteger() + 1
 
-    def updatedContent = content.replaceAll(/version\s*=\s*['"](\d+)\.(\d+)\.(\d+)['"]/, "version='${major}.${minor}.${nextPatchVersion}'")
+    def updatedContent = content.replaceAll(/version\s*=\s*['"](\d+)\.(\d+)\.(\d+)['"]/, "version='${major}.${minor}.${nextPatch}'")
 
     writeFile(file: file, text: updatedContent)
 }
