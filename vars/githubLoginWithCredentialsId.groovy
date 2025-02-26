@@ -3,7 +3,7 @@
 def call(credentialsId, url) {
     withCredentials([
         string(
-            credentialsId: ${credentialsId}, 
+            credentialsId: credentialsId, 
             variable: 'GIT_PAT')]) {
         url = url.replace("https://github.com", "https://${GIT_PAT}@github.com")
 
