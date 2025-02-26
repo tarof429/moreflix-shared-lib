@@ -5,3 +5,4 @@ def call() {
     sh 'git add .'
     sh 'git commit -m "CI: version bump"'
     sh "git push origin HEAD:${branch}"
+}
