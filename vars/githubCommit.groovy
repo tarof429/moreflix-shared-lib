@@ -12,7 +12,7 @@ def call(credentialsId, url) {
         sh("git config --global user.email 'jenkins@release.com'")
         sh("git config --global user.name 'jenkins'")
         sh("git remote set-url origin ${url}")
-}
+
         def branch = env.BRANCH_NAME
         sh 'git add .'
         sh 'git commit -m "CI: version bump"'
