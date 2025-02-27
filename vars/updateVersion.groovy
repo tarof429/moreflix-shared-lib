@@ -28,7 +28,7 @@ def updateSetupPy(String file) {
             def minor = versionParts[1].toString()
             def patch = (versionParts[2].toInteger() + 1).toString()
 
-            return "version='${major}.${minor}.${patch}'" // Replace the line with the updated version
+            return "    version='${major}.${minor}.${patch}'," // Replace the line with the updated version
         }
         return line
     }
